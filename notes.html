@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<header>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="login.html" id="logoutLink">Logout</a></li>
+        </ul>
+
+        <h2>StudentHub</h2>
+
+    </nav>
+</header>
+
+
+    <main class="notes-page">
+
+        <div class="page-heading">
+            <h1>My Study Notes</h1>
+            <p>Create and organise your notes for easy revision.</p>
+        </div>
+
+        <form class="notes-form" id="notesForm">
+
+            <h2>Create a New Note</h2>
+
+            <label for="noteTitle">Note Title</label>
+            <input type="text" id="noteTitle" placeholder="Enter note title" required>
+
+            <label for="noteUnit">Unit or Subject</label>
+            <input type="text" id="noteUnit" placeholder="Enter unit name" required>
+
+            <label for="noteContent">Your Notes</label>
+            <textarea id="noteContent" placeholder="Write your notes here..." rows="6" required></textarea>
+
+            <button type="submit">Save Note</button>
+
+        </form>
+
+        <section class="saved-notes" id="savedNotes">
+            <h2>My Saved Notes</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js"></script>
+
+</body>
+</html>

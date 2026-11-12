@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Assignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+<header>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="login.html" id="logoutLink">Logout</a></li>
+        </ul>
+
+        <h2>StudentHub</h2>
+
+    </nav>
+</header>
+
+
+    <main class="assignments-page">
+
+        <div class="page-heading">
+            <h1>My Assignments</h1>
+            <p>Organise your tasks and keep track of your deadlines.</p>
+        </div>
+
+        <form class="assignment-form" id="assignmentForm">
+
+            <h2>Add New Assignment</h2>
+
+            <label for="assignmentTitle">Assignment Title</label>
+            <input type="text" id="assignmentTitle" placeholder="Enter assignment title" required>
+
+            <label for="assignmentUnit">Unit Name</label>
+            <input type="text" id="assignmentUnit" placeholder="Enter unit name" required>
+
+            <label for="assignmentDate">Due Date</label>
+            <input type="date" id="assignmentDate" required>
+
+            <button type="submit">Add Assignment</button>
+
+        </form>
+
+        <section class="assignment-list" id="assignmentList">
+            <h2>My Saved Assignments</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js"></script>
+
+</body>
+</html>

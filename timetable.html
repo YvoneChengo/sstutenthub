@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<header>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="login.html" id="logoutLink">Logout</a></li>
+        </ul>
+
+        <h2>StudentHub</h2>
+
+    </nav>
+</header>
+
+
+    <main class="timetable-page">
+
+        <div class="page-heading">
+            <h1>My Study Timetable</h1>
+            <p>Plan your study sessions and manage your time effectively.</p>
+        </div>
+
+        <form class="timetable-form" id="timetableForm">
+
+            <h2>Add Study Session</h2>
+
+            <label for="subject">Subject or Unit</label>
+            <input type="text" id="subject" placeholder="Enter subject or unit" required>
+
+            <label for="day">Day</label>
+            <select id="day" required>
+                <option value="">Select a day</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+
+            <label for="startTime">Start Time</label>
+            <input type="time" id="startTime" required>
+
+            <label for="endTime">End Time</label>
+            <input type="time" id="endTime" required>
+
+            <button type="submit">Add Session</button>
+
+        </form>
+
+        <section class="timetable-list" id="timetableList">
+            <h2>My Saved Study Sessions</h2>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js"></script>
+
+</body>
+</html>

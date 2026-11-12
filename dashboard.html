@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+<header>
+    <nav class="navbar">
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="login.html" id="logoutLink">Logout</a></li>
+        </ul>
+
+        <h2>StudentHub</h2>
+
+    </nav>
+</header>
+
+
+    <main class="dashboard">
+
+        <div class="dashboard-welcome">
+            <h1 id="dashboardWelcome">Welcome to StudentHub!</h1>
+            <p>Manage your academic activities from one place.</p>
+        </div>
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <h2>Assignments</h2>
+                <p>Keep track of your academic tasks and deadlines.</p>
+                <h3 id="totalAssignments">0</h3>
+                <a href="assignments.html">View Assignments</a>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Study Timetable</h2>
+                <p>Organise your study sessions and manage your time.</p>
+                <h3 id="totalSessions">0</h3>
+                <a href="timetable.html">View Timetable</a>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>My Notes</h2>
+                <p>Save and access your important study notes.</p>
+                <h3 id="totalNotes">0</h3>
+                <a href="notes.html">View Notes</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js"></script>
+
+</body>
+</html>

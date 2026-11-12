@@ -1,0 +1,433 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #D9EEFF;
+    color: #102C4A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #071B33;
+    padding: 18px 5%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #59C3FF;
+}
+
+
+/* HOMEPAGE */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 8%;
+    background: linear-gradient(135deg, #071B33, #075B96, #168BC5);
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: white;
+    color: #102C4A;
+    padding: 13px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #59C3FF;
+    color: white;
+}
+
+
+/* SIGNUP AND LOGIN */
+
+.signup-container,
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 20px;
+}
+
+.signup-form,
+.login-form {
+    background-color: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(7, 27, 51, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.signup-form h1,
+.login-form h1 {
+    text-align: center;
+    color: #071B33;
+    margin-bottom: 5px;
+}
+
+.signup-form p,
+.login-form p {
+    text-align: center;
+    color: #52677D;
+    margin-bottom: 10px;
+}
+
+.signup-form label,
+.login-form label {
+    font-weight: bold;
+    color: #102C4A;
+}
+
+.signup-form input,
+.login-form input,
+.assignment-form input,
+.timetable-form input,
+.timetable-form select,
+.notes-form input,
+.notes-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B5D5EC;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+}
+
+.signup-form input:focus,
+.login-form input:focus,
+.assignment-form input:focus,
+.timetable-form input:focus,
+.timetable-form select:focus,
+.notes-form input:focus,
+.notes-form textarea:focus {
+    border-color: #168BC5;
+    box-shadow: 0 0 5px rgba(22, 139, 197, 0.3);
+}
+
+.signup-form button,
+.login-form button,
+.assignment-form button,
+.timetable-form button,
+.notes-form button {
+    background: linear-gradient(135deg, #075B96, #168BC5);
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-form button:hover,
+.login-form button:hover,
+.assignment-form button:hover,
+.timetable-form button:hover,
+.notes-form button:hover {
+    background: #071B33;
+}
+
+.login-link,
+.signup-link {
+    margin-top: 10px;
+}
+
+.login-link a,
+.signup-link a {
+    color: #087DB8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* PAGE HEADINGS */
+
+.page-heading {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.page-heading h1 {
+    color: #071B33;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: #52677D;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 35px 5%;
+    flex: 1;
+}
+
+.dashboard-welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-welcome h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #071B33;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(7, 27, 51, 0.12);
+}
+
+.dashboard-card h2 {
+    color: #075B96;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+    font-size: 32px;
+    color: #168BC5;
+    margin-bottom: 15px;
+}
+
+.dashboard-card a {
+    display: inline-block;
+    background-color: #075B96;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dashboard-card a:hover {
+    background-color: #071B33;
+}
+
+
+/* ASSIGNMENTS, TIMETABLE AND NOTES */
+
+.assignments-page,
+.timetable-page,
+.notes-page {
+    flex: 1;
+    padding: 20px 5% 40px;
+}
+
+.assignment-form,
+.timetable-form,
+.notes-form {
+    background-color: white;
+    max-width: 550px;
+    margin: 0 auto 35px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(7, 27, 51, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.assignment-form h2,
+.timetable-form h2,
+.notes-form h2 {
+    text-align: center;
+    color: #075B96;
+    margin-bottom: 10px;
+}
+
+.assignment-form label,
+.timetable-form label,
+.notes-form label {
+    font-weight: bold;
+    color: #102C4A;
+}
+
+.notes-form textarea {
+    resize: vertical;
+}
+
+
+/* SAVED ITEMS */
+
+.assignment-list,
+.timetable-list,
+.saved-notes {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.assignment-list > h2,
+.timetable-list > h2,
+.saved-notes > h2 {
+    text-align: center;
+    color: #071B33;
+    margin-bottom: 20px;
+}
+
+.assignment-card,
+.timetable-card,
+.note-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 9px;
+    box-shadow: 0 4px 12px rgba(7, 27, 51, 0.1);
+}
+
+.assignment-card h3,
+.timetable-card h3,
+.note-card h3 {
+    color: #075B96;
+    margin-bottom: 10px;
+}
+
+.assignment-card p,
+.timetable-card p,
+.note-card p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.assignment-card button,
+.timetable-card button,
+.note-card button {
+    background-color: #075B96;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    margin: 8px 8px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.assignment-card button:hover,
+.timetable-card button:hover,
+.note-card button:hover {
+    background-color: #071B33;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #071B33;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: auto;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
